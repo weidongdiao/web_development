@@ -1,0 +1,6 @@
+<div class="email" ng-repeat="email in emails">
+    <!-- $index is an iterator in Angular. It counts each loop, starting at 0. Therefore, each email in $scope.emails gets its own link. Then, in app.js, we use this id to display each email on one page. -->
+    <a href="#/outbox/{{$index}}">
+        <span class="from">{{ email.from }}</span><span class="subject">{{ email.subject }}</span><span class="date">{{ email.datetime | date }}</span>
+    </a>
+</div>

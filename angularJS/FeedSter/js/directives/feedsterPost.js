@@ -1,0 +1,9 @@
+app.directive('feedsterPost',function(){
+  return{
+    restirct:{
+      scope:'E',
+      post:'='
+    },
+    templateUrl:'js/directives/feedsterPost.html'
+  };
+});
